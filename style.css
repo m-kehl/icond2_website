@@ -110,7 +110,30 @@ button:hover{
     display: inline;
 }
 
-@media only screen and (orientation: portrait) {
+@media only screen and (orientation: portrait) and (max-width: 500px) {
+    .title{float: left;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 15px;
+        padding-left: 5px;}
+
+    .frog_pic{height: 50px;
+    }
+
     .title_line{
-        position: absolute;
-}
+        height: 60px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    .main_tabsets{
+        padding-top: 49px;
+    }
+
+    }
+
+
+        
