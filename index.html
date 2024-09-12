@@ -34,18 +34,19 @@
     </div>
 
     <div id="pheno" class="city" style="display:none">
-    <iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/phenology/"> </iframe>
+    <!-- <iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/phenology/"> </iframe>-->
     </div>
 
     <div id="mess" class="city" style="display:none">
-    <iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/messdata/"> </iframe>
+    <!--<iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/messdata/"> </iframe>-->
     </div>
 
     <div id="icond2" class="city">
-    <iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/icond2/"> </iframe>
+    <!--<iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/icond2/"> </iframe>-->
     </div>
 
     <div id="impressum" class="city" style="display:none">
+        <img class="frog_imp" src = "frosch_light.png", onclick="changefrog()" ondblclick="memory_play()"> 
         <h2>Impressum</h2>
         <h3>Kontakt</h3>
         <div>M. Kehl <br> mkehl.laubfrosch@gmail.com <br> Quellcode auf <a class="link_frog" href="https://github.com/m-kehl/weather_icond2" target="_blank">GitHub</a></div>
@@ -197,7 +198,27 @@
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-} 
+}
+
+let i = 1
+function changefrog() {
+    console.log(i % 2)
+    if (i % 2 === 1){
+        let x = document.getElementsByClassName("frog_imp");
+        x[0].src="frosch_dark.png";
+        i += 1
+
+    } else{
+        console.log(i)
+        let x = document.getElementsByClassName("frog_imp");
+        x[0].src="frosch_light.png";
+        i += 1
+    }
+}
+
+function memory_play() {
+
+}
     
 </script>
 
