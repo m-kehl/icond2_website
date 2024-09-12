@@ -6,7 +6,7 @@ body {font-family: "Reddit Sans", sans-serif;
     padding-top: 0px;
     background-color: white;
     display: inline-block;
-    text-align: left;
+    text-align: justify; /*blocksatz*/
     line-height: 21px;
     max-width: 1320px;
 }
@@ -133,7 +133,18 @@ button:hover{
         padding-top: 49px;
     }
 
-    }
+    .frog_imp{height: 150px;
+            }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 311px) {
+    .title{float: left;
+        text-align: center;
+        font-size: 15px;
+        padding-top: 15px;
+        padding-left: 2px;}
+
+}
 
 
         
