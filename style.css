@@ -33,6 +33,12 @@ h3 {
           width: auto;
           float: left;
             }
+
+.frog_imp{height: 225px;
+    width: auto;
+    float: right;
+        }
+
 .title{float: left;
     text-align: center;
     font-size: 30px;
