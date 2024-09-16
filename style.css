@@ -9,6 +9,7 @@ body {font-family: "Reddit Sans", sans-serif;
     text-align: justify; /*blocksatz*/
     line-height: 21px;
     max-width: 1320px;
+    width: 99vw;
 }
 
 h2 {
@@ -24,7 +25,6 @@ h3 {
     top: 0;
     background-color: #3dc296;
     height: 100px;
-    width: 95vw;
     max-width: 1320px;
     margin: auto;
 }
