@@ -14,7 +14,7 @@
 
 <body>
     <div class="title_line">
-        <img class="frog_pic" src = "laubfrosch.png"> 
+        <img class="frog_pic" src = "frog_imgs/laubfrosch.png"> 
         <div class = title> 
             Mess- und Prognosedaten 
         </div>
@@ -35,18 +35,21 @@
     </div>
 
     <div id="pheno" class="city" style="display:none">
-    <!-- <iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/phenology/"> </iframe>-->
+    <!--<iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/phenology/"> </iframe> -->
     </div>
 
     <div id="mess" class="city" style="display:none">
-    <!--<iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/messdata/"> </iframe>-->
+   <!-- <iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/messdata/"> </iframe> -->
     </div>
 
     <div id="icond2" class="city">
-    <!--<iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/icond2/"> </iframe>-->
+    <!--<iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/icond2/"> </iframe> -->
     </div>
 
     <div id="memory" class="city" style="display:none">
+        <div class="nonmemory">
+            Der Bildschirm ist zu klein, um das Froschmemory spieln zu können.
+        </div>
         <div class="playground">
             <div class="card" >
             <div class="inner-card">
@@ -94,7 +97,7 @@
                     <img src="frog_imgs/front_pic.png" alt="front image" class="front_img frog_img">
                 </div>
                 <div class="back">
-                    <img src="frog_imgs/laubfrosch_orange.png" alt="picture frog" class="frog_pic frog_img" id = "img4">
+                    <img src="frog_imgs/laubfrosch_dunkelgruen.png" alt="picture frog" class="frog_pic frog_img" id = "img4">
                 </div>
             </div>
             </div>
@@ -174,7 +177,7 @@
                     <img src="frog_imgs/front_pic.png" alt="front image" class="front_img frog_img">
                 </div>
                 <div class="back">
-                    <img src="frog_imgs/laubfrosch_orange.png" alt="picture frog" class="frog_pic frog_img" id = "img12">
+                    <img src="frog_imgs/laubfrosch_dunkelgruen.png" alt="picture frog" class="frog_pic frog_img" id = "img12">
                 </div>
             </div>
             </div>
@@ -215,6 +218,8 @@
             <button class="field_box newgame" onclick="f_newgame()">New Game</button>
         </div>
     </div>
+
+
         <!-- <div class="radiobuttons">
             <input type="radio" name="size" value="small" id = "small" checked>
             <label for="small">Small</label>
@@ -227,7 +232,7 @@
     </div>
 
     <div id="impressum" class="city" style="display:none">
-        <img class="frog_imp tablink" src = "frosch_light.png", onclick="changefrog()" ondblclick="openCity(event,'memory')"> 
+        <img class="frog_imp tablink" src = "frog_imgs/laubfrosch_tuerkis.png", onclick="changefrog()" ondblclick="openCity(event,'memory')"> 
         <h2>Impressum</h2>
         <h3>Kontakt</h3>
         <div>M. Kehl <br> mkehl.laubfrosch@gmail.com <br> Quellcode auf <a class="link_frog" href="https://github.com/m-kehl/weather_icond2" target="_blank">GitHub</a></div>
@@ -262,6 +267,7 @@
     </div>
 
     <div id="datenschutz" class="city" style="display:none">
+        <img class="frog_imp tablink" src = "frog_imgs/laubfrosch_tuerkis.png", onclick="changefrog()" ondblclick="openCity(event,'memory')"> 
         <h2>Datenschutz</h2>
         <h3>1 Datenschutzerklärung</h3>
         <div>Die vorliegende Datenschutzerklärung klärt Sie über die Art, den Umfang
@@ -386,13 +392,15 @@ function changefrog() {
     console.log(i % 2)
     if (i % 2 === 1){
         let x = document.getElementsByClassName("frog_imp");
-        x[0].src="frosch_dark.png";
+        x[0].src="frog_imgs/laubfrosch_dunkelgruen.png";
+        x[1].src="frog_imgs/laubfrosch.png";
         i += 1
 
     } else{
         console.log(i)
         let x = document.getElementsByClassName("frog_imp");
-        x[0].src="frosch_light.png";
+        x[0].src="frog_imgs/laubfrosch_tuerkis.png";
+        x[1].src="frog_imgs/laubfrosch_tuerkis.png";
         i += 1
     }
 }

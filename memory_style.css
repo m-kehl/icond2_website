@@ -6,25 +6,21 @@
 }
 
 .field{
-  background-color: azure;
   width: 400px;
   margin: auto;
   display: flex;
   justify-content:space-between;
-  background-color: green;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .radiobuttons{
-  background-color: azure;
   width: 400px;
   margin: auto;
   display: flex;
-  background-color: green;
   padding-top: 20px;
 }
 
 .playground{
-    background-color: azure;
     width: 400px;
     margin-left: 33%;
     display: flex;
@@ -75,16 +71,18 @@
   }
 
   .field_box{
-    background-color: lightgrey;;
-    color: green;
-    border-radius: 3px;
     padding: 4px;
   }
 
   .newgame{
     cursor: pointer;
-    background-color: #55e837;
+    background-color: aquamarine;
   }
 
 
+  @media only screen and (max-width: 650px) {
+    .playground{
+        margin: auto;
+    }
+}
 

@@ -70,9 +70,10 @@ button {
 }
 
 button:hover{
-    border: 2px solid gray;
+    border: 2px solid #32805b;
     cursor:pointer;
 }
+
 .w3-red{
     background-color: honeydew;
 }
@@ -110,6 +111,13 @@ button:hover{
     display: inline;
 }
 
+.nonmemory{
+    display: none;
+}
+
+
+
+
 @media only screen and (orientation: portrait) and (max-width: 500px) {
     .title{float: left;
         text-align: center;
@@ -121,7 +129,7 @@ button:hover{
     }
 
     .title_line{
-        height: 60px;
+        height: 59px;
     }
 
     button {
@@ -130,11 +138,19 @@ button:hover{
     }
 
     .main_tabsets{
-        padding-top: 49px;
+        padding-top: 45px;
     }
 
     .frog_imp{height: 150px;
             }
+
+    .playground{
+        display: none !important;
+    }
+
+    .nonmemory{
+        display: block;
+    }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 311px) {
@@ -143,7 +159,13 @@ button:hover{
         font-size: 15px;
         padding-top: 15px;
         padding-left: 2px;}
-
+    .main_tabsets{
+        padding-top: 44px;
+    }
+    button {
+        font-size: 10px;
+        padding: 2px;
+    }
 }
 
 
