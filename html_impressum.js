@@ -1,7 +1,9 @@
     document.write(`<img class="frog_imp tablink" src = "frog_imgs/laubfrosch_tuerkis.png", onclick="changefrog()" ondblclick="openSubpage(event,'memory')"> 
         <h2>Impressum</h2>
         <h3>Kontakt</h3>
-        <div>M. Kehl <br> mkehl.laubfrosch@gmail.com <br> Quellcode auf <a class="link_frog" href="https://github.com/m-kehl/weather_icond2" target="_blank">GitHub</a></div>
+        <div>M. Kehl <br> mkehl.laubfrosch@gmail.com <br> Quellcode auf GitHub: 
+        <a class="link_frog" href="https://github.com/m-kehl/icond2_website" target="_blank">Website</a> und 
+        <a class="link_frog" href="https://github.com/m-kehl/weather_icond2" target="_blank">RShiny</a></div>
  
         <h3>Haftungsausschluss</h3>
         <div>Der Autor übernimmt keine Gewähr für die Richtigkeit, Genauigkeit,
