@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="memory_style.css">
 <link rel="icon" href="frosch.ico">
 <link rel="preconnect" href="https://laubfrosch.shinyapps.io/icond2/">
+<link rel="preconnect" href="https://laubfrosch.shinyapps.io/messdata/">
+<link rel="preconnect" href="https://laubfrosch.shinyapps.io/phenology/">
 
    
 </head>
@@ -21,10 +23,10 @@
 
         <div class="main_tabsets">
             <!--<button class="tablink" onclick="window.location.href='indexS.html';">Silja</button>-->
-            <!--<button class="tablink" onclick="openCity(event,'about');topFunction()">Über</button>-->
-            <button class="tablink" onclick="openCity(event,'pheno');topFunction()">Phänologie</button>
-            <button class="tablink" onclick="openCity(event,'mess');topFunction()">Messdaten</button>
-            <button class="tablink w3-red" onclick="openCity(event,'icond2');topFunction()">ICON D2</button>
+            <!--<button class="tablink" onclick="openSubpage(event,'about');topFunction()">Über</button>-->
+            <button class="tablink" onclick="openSubpage(event,'pheno');topFunction()">Phänologie</button>
+            <button class="tablink" onclick="openSubpage(event,'mess');topFunction()">Messdaten</button>
+            <button class="tablink w3-red" onclick="openSubpage(event,'icond2');topFunction()">ICON D2</button>
         </div> 
     </div>
 
@@ -35,19 +37,19 @@
         <p>Open Data hello</p>
     </div>-->
 
-    <div id="pheno" class="city" style="display:none">
+    <div id="pheno" class="subpage" style="display:none">
     <iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/phenology/"> </iframe> 
     </div>
 
-    <div id="mess" class="city" style="display:none">
+    <div id="mess" class="subpage" style="display:none">
        <iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/messdata/"> </iframe> 
     </div>
 
-    <div id="icond2" class="city">
+    <div id="icond2" class="subpage">
        <iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/icond2/"> </iframe> 
     </div>
 
-    <div id="memory" class="city" style="display:none">
+    <div id="memory" class="subpage" style="display:none">
         <div class="nonmemory">
             Der Bildschirm ist zu klein, um das Froschmemory spieln zu können.
         </div>
@@ -232,8 +234,8 @@
         <iframe height="1200" width="100%" frameborder="no" src="https://laubfrosch.shinyapps.io/icond2/"> </iframe>-->
     </div>
 
-    <div id="impressum" class="city" style="display:none">
-        <img class="frog_imp tablink" src = "frog_imgs/laubfrosch_tuerkis.png", onclick="changefrog()" ondblclick="openCity(event,'memory')"> 
+    <div id="impressum" class="subpage" style="display:none">
+        <img class="frog_imp tablink" src = "frog_imgs/laubfrosch_tuerkis.png", onclick="changefrog()" ondblclick="openSubpage(event,'memory')"> 
         <h2>Impressum</h2>
         <h3>Kontakt</h3>
         <div>M. Kehl <br> mkehl.laubfrosch@gmail.com <br> Quellcode auf <a class="link_frog" href="https://github.com/m-kehl/weather_icond2" target="_blank">GitHub</a></div>
@@ -267,8 +269,8 @@
         <br><br><br>
     </div>
 
-    <div id="datenschutz" class="city" style="display:none">
-        <img class="frog_imp tablink" src = "frog_imgs/laubfrosch_tuerkis.png", onclick="changefrog()" ondblclick="openCity(event,'memory')"> 
+    <div id="datenschutz" class="subpage" style="display:none">
+        <img class="frog_imp tablink" src = "frog_imgs/laubfrosch_tuerkis.png", onclick="changefrog()" ondblclick="openSubpage(event,'memory')"> 
         <h2>Datenschutz</h2>
         <h3>1 Datenschutzerklärung</h3>
         <div>Die vorliegende Datenschutzerklärung klärt Sie über die Art, den Umfang
@@ -362,8 +364,8 @@
     <div class="footer_main">
         <div class="copyright">© 2024 - M. Kehl</div>
         <div>
-            <a class="link_frog tablink"  onclick="openCity(event,'impressum');topFunction()"> Impressum</a> |
-            <a class="link_frog tablink"  onclick="openCity(event,'datenschutz');topFunction()">Datenschutz</a> |
+            <a class="link_frog tablink"  onclick="openSubpage(event,'impressum');topFunction()"> Impressum</a> |
+            <a class="link_frog tablink"  onclick="openSubpage(event,'datenschutz');topFunction()">Datenschutz</a> |
             <a class="link_frog" href="mailto:mkehl.laubfrosch@gmail.com">Kontakt</a> <span class="footer_mail">mkehl.laubfrosch@gmail.com</span>
         </div>
     </div>
@@ -372,13 +374,13 @@
 </body>
 <script>
     /* search for CSS tabs */ 
-    function openCity(evt, cityName) {
+    function openSubpage(evt, sub_name) {
         var i, x, tablinks;
-        x = document.getElementsByClassName("city");
+        x = document.getElementsByClassName("subpage");
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(sub_name).style.display = "block";
         tablinks = document.getElementsByClassName("tablink");
         for (i = 0; i < x.length; i++) {
             tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
