@@ -1,6 +1,6 @@
 document.write(`
            <div class="nonmemory">
-            Der Bildschirm ist zu klein, um das Froschmemory spieln zu können.
+            Der Bildschirm ist zu klein, um das Froschmemory spielen zu können.
         </div>
         <div class="playground">
             <div class="card" >

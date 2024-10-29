@@ -54,6 +54,9 @@ function clicking() {
            -> clicky -> turn card to from front (questionmark) to back (frog image)
            -> active -> the two cards turned together -> check whether they are the same or not */
         let card_turned = event.target.parentElement.parentElement;
+        if (card_turned.classList.contains("clicky")){
+
+        }else{
         card_turned.classList.add("clicky");
         card_turned.classList.add("active");
 
@@ -88,7 +91,7 @@ function clicking() {
 
             },1000)
         }
-    }
+    }}
 }
 
 /* start a new game by clicking on button */
