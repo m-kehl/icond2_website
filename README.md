@@ -1,34 +1,8 @@
 # Project Title
 
-HTML / CSS / JS code for the webpage laubfrosch.balga.ch
+webpage to visualize three R shiny apps
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+HTML / CSS / JS code for a webpage to visualize the three shiny apps messdata, icond2, and phenology which represent interactive data of the DWD (Deutschter Wetter Dienst). The code here produces a website like the one online at laubfrosch.balga.ch. Furthermore, the HTML code here is also used to test different coding practices and play around with different methods.
 
-## Getting Started
-
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
-
-## Help
-
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
